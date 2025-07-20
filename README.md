@@ -68,8 +68,6 @@ Main entities:
 Each testbed is linked to providers, devices, supporting systems, and booking requests.
 
 ---
-## Home Page  Overview
-![Smart Search demo Page](screenshot/home.png)
 ## 📦 Installation
 
 ```bash
