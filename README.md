@@ -8,8 +8,9 @@ A centralized online platform for managing, publishing, and booking laboratory t
 ---
 
 ## 🚀 Features
-
+![Smart Search demo Page](screenshot/search.png)
 - 🔍 **Smart Search & Filter** for testbeds based on:
+- 
   - Test type
   - Location
   - Certification
