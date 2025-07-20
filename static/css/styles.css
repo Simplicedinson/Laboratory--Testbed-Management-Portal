@@ -1,0 +1,221 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #f9fafb;
+  /* Optional: fixe Höhe, damit es konsistent bleibt */
+  height: 80px;
+}
+
+/* Logo links */
+.header .logo {
+  /* Logo-Container links, nichts weiter nötig */
+}
+.header .logo img {
+  height: 60px;
+  width: auto;
+}
+
+/* Formular rechts */
+.login-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;      /* Schiebt das Formular ganz nach rechts */
+}
+
+.login-form input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  padding: 0.5rem 1rem;
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Link „Registrieren“ direkt am Formular anknüpfen */
+.register-link {
+  margin-left: 0.5rem;
+  color: #0066cc;
+  text-decoration: none;
+}
+.register-link:hover {
+  text-decoration: underline;
+}
+/* Container für deinen Willkommenstext */
+.centered-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 1rem;
+  
+}
+
+/* Überschrift deutlich vergrößern */
+.centered-text h1 {
+  font-size: 2rem;          /* statt 2rem nun 3rem */
+  line-height: 1;
+  margin-bottom: 1rem;
+  color: #0c3a66;
+}
+
+/* Fließtext vergrößern */
+.centered-text p {
+  font-size: 1rem;        /* statt 1.1rem nun 1.5rem */
+  line-height: 0.5;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Der Hero-Container als flexibles Layout */
+.hero {
+  display: flex;
+  align-items: flex-start;     /* Bild oben ausrichten */
+  justify-content: flex-start; /* Bild an den linken Rand schieben */
+  width: 100%;
+  gap: 2rem;
+  margin-top: -90px;
+  
+
+}
+
+/* Der Bild-Wrapper */
+.hero-image {
+  flex: 0 10 25%;               /* nimmt 50% der Breite ein */
+  max-width: 50%;              /* nie breiter als 50% */
+  margin-right: 1rem;          /* Abstand zum Text */
+  height: inherit;
+}
+
+/* Das eigentliche Bild */
+.hero-image img {
+  width: 100%;                 /* skaliert mit dem Container */
+  height: auto;                /* behält das Seitenverhältnis */
+  display: block;              /* entfernt mögliche Inline-Abstände */
+}
+
+/* Responsive Anpassung für kleinere Bildschirme */
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;    /* Bild und/oder anderen Content untereinander */
+    align-items: center;       /* zentriert alles */
+  }
+  .hero-image {
+    flex: 0 0 100%;            /* Bild nimmt volle Breite */
+    max-width: 100%;
+  }
+}
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #f5df66;
+  padding: 0.0rem 1rem;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  font-size: 0.8rem;
+  color:black;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 1rem;
+}
+
+/* Logo links */
+.footer-logo img {
+  max-height: 80px;
+  width: auto;
+  flex: 0 10 20%; 
+  max-width: 50%;
+  margin-top: 30px;
+}
+
+/* Kontakt mittig */
+.footer-contact h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #0c3a66;
+}
+.footer-contact p {
+  margin: 0.3rem 0;
+  line-height: 1.4;
+}
+
+/* Links rechts */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+   margin-top: 30px;
+}
+.footer-links li {
+  margin: 0.5rem 0;
+}
+.footer-links a {
+  color: #0c3a66;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+/* In deinem styles.css oder register.css */
+.footer-links a[href="https://www.ertemes.com"] {
+  color: #0066cc;     /* Blau – passe den Hex-Wert nach Wunsch an */
+  text-decoration: none;
+}
+
+.footer-links a[href="https://www.ertemes.com"]:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: untereinander auf kleinen Bildschirmen */
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-column {
+    margin: 1rem 0;
+  }
+}
+body {
+  background: url('/static/images/background.png') center/cover no-repeat;
+}
+
+
+.features-section {
+  display: flex;
+  flex-direction: column;  /* wichtige Änderung */
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: -345px;
+}
+/* Einzelne Kachel */
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 1.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0c3a66;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover-Effekt für Kachel */
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
