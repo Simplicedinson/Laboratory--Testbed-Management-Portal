@@ -1,0 +1,169 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #2c28f5;
+}
+
+.header {
+  padding: 1rem;
+  background: #e5e3e9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.register-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*padding: 2rem;*/
+  background: url('/static/images/background.png') center/cover repeat;
+
+}
+
+.register-card {
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  background: #ffffff;
+  text-align: center;
+}
+
+.register-card h2 {
+  margin-bottom: 1.5rem;
+  color: #0c3a66;
+}
+
+.register-card label {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.register-card input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.register-card button {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  width: 100%;
+  background: #0c3a66;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.register-card button:hover {
+  background: #0a2c50;
+}
+
+.register-card p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.register-card a {
+  color: #0c3a66;
+  text-decoration: none;
+}
+
+.register-card a:hover {
+  text-decoration: underline;
+}
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #f5df66;
+  padding: 0.0rem 1rem;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  font-size: 0.8rem;
+  color:black;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 1rem;
+}
+
+/* Logo links */
+.footer-logo img {
+  max-height: 80px;
+  width: auto;
+  flex: 0 10 20%; 
+  max-width: 50%;
+  margin-top: 30px;
+}
+
+/* Kontakt mittig */
+.footer-contact h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #0c3a66;
+}
+.footer-contact p {
+  margin: 0.3rem 0;
+  line-height: 1.4;
+}
+
+/* Links rechts */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+   margin-top: 30px;
+}
+.footer-links li {
+  margin: 0.5rem 0;
+}
+.footer-links a {
+  color: #0c3a66;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+/* In deinem styles.css oder register.css */
+.footer-links a[href="https://www.ertemes.com"] {
+  color: #0066cc;     /* Blau – passe den Hex-Wert nach Wunsch an */
+  text-decoration: none;
+}
+
+.footer-links a[href="https://www.ertemes.com"]:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: untereinander auf kleinen Bildschirmen */
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-column {
+    margin: 1rem 0;
+  }
+}
+body {
+  background: url('/static/images/background.png') center/cover no-repeat;
+}
