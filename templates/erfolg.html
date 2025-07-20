@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrierung erfolgreich</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Willkommen, {{ firstname }} {{ lastname }}!</h1>
+    <p>Ihre Registrierung war erfolgreich im ERTERMES Prüfstand-Portal.</p>
+    <p>Sie können sich jetzt <a href="/">hier einloggen</a>.</p>
+  </div>
+</body>
+<footer class="site-footer">
+  <div class="footer-column footer-logo">
+    <img src="{{ url_for('static', path='images/logo1.png') }}" alt="ErTeMes Footer-Logo">
+  </div>
+  <div class="footer-column footer-contact">
+    <h3>ErteMes GmbH</h3>
+    <p>Goethestraße 20<br>
+       15738 Zeuthen</p>
+    <p>Telefon: +49 (0) 162 3310971<br>
+       E-Mail: <a href="mailto:ertemes@ertemes.de">ertemes@ertemes.de</a>
+    </p>
+  </div>
+  <div class="footer-column footer-links">
+    <ul>
+  <li>
+    <a href="https://www.ertemes.com/ueber-uns" target="_blank" rel="noopener">
+      Über Uns
+    </a>
+  </li>
+  <li>
+    <a href="https://www.ertemes.com/impressum#impressum" target="_blank" rel="noopener">
+      Impressum
+    </a>
+  </li>
+  <li>
+    <a href="https://www.ertemes.com/impressum#Datenschutzerklaerung" target="_blank" rel="noopener">
+      Datenschutzerklärung
+    </a>
+  </li>
+</ul>
+  </div>
+</footer>
+</html>

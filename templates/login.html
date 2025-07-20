@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ErTeMes Prüfstand-Portal</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="{{ url_for('static', path='images/logo.png') }}" alt="ERTErmes Logo">
+    </div>
+
+    <form class="login-form" method="post" action="/login">
+      <input name="username" placeholder="Username" required>
+      <input name="password" type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <a class="register-link" href="/register">Registrieren</a>
+    </form>
+  </header>
+
+<main class="content">
+  <section class="centered-text">
+    <h1>Willkommen bei ErTeMes Prüfstandsportal</h1>
+    <p>Online-Datenbank für Mess-, Test- und Prüfeinrichtungen</p>
+    <p>Die digitale Plattform für Hochschulen, Forschungseinrichtungen und die Industrie</p>
+
+  </section>
+
+  <section class="hero">
+ 
+    <div class="hero-image">
+      <img src="{{ url_for('static', path='images/home1.png') }}" alt="Prüfstandanlage">
+    </div>
+  </section>
+  <section class="description">
+
+<section class="features-section">
+  <div class="feature-card">
+    Zentrale Suche und Vergleich von Testeinrichtungen
+  </div>
+  <div class="feature-card">
+    Anfragenstellung und Testsbuchungen
+  </div>
+  <div class="feature-card">
+   Laboranrichtungen oder Prüfstand anbieten
+  </div>
+</section>
+</main>
+
+  <script src="{{ url_for('static', path='js/scripts.js') }}"></script>
+</body>
+<footer class="site-footer">
+  <div class="footer-column footer-logo">
+    <img src="{{ url_for('static', path='images/logo1.png') }}" alt="ErTeMes Footer-Logo">
+  </div>
+  <div class="footer-column footer-contact">
+    <h3>ErteMes GmbH</h3>
+    <p>Goethestraße 20<br>
+       15738 Zeuthen</p>
+    <p>Telefon: +49 (0) 162 3310971<br>
+       E-Mail: <a href="mailto:ertemes@ertemes.de">ertemes@ertemes.de</a>
+    </p>
+  </div>
+  <div class="footer-column footer-links">
+    <ul>
+  <li>
+    <a href="https://www.ertemes.com/ueber-uns" target="_blank" rel="noopener">
+      Über Uns
+    </a>
+  </li>
+  <li>
+    <a href="https://www.ertemes.com/impressum#impressum" target="_blank" rel="noopener">
+      Impressum
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.ertemes.com/impressum#Datenschutzerklaerung" target="_blank" rel="noopener">
+      Datenschutzerklärung
+    </a>
+  <li>
+    <a href="https://www.ertemes.com" target="_blank" rel="noopener">
+      www.ertemes.com
+    </a>
+</ul>
+  </div>
+</footer>
+</html>

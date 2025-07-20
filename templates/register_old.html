@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registrierung – Prüfstand-Portal</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h2>Registrierung</h2>
+
+    {% if error %}
+      <div class="alert alert-error">{{ error }}</div>
+    {% endif %}
+    {% if msg %}
+      <div class="alert alert-success">{{ msg }}</div>
+    {% endif %}
+
+    <form method="post" action="/register">
+      <div class="form-group">
+        <label for="firstname">Vorname</label>
+        <input type="text" id="firstname" name="firstname" required />
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Name</label>
+        <input type="text" id="lastname" name="lastname" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-Mail-Adresse</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="company">Firmenname</label>
+        <input type="text" id="company" name="company" />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Telefonnummer</label>
+        <input type="tel" id="phone" name="phone" />
+      </div>
+
+      <div class="form-group">
+        <label for="password1">Passwort</label>
+        <input type="password" id="password1" name="password1" required minlength="6" />
+      </div>
+
+      <div class="form-group">
+        <label for="password2">Passwort bestätigen</label>
+        <input type="password" id="password2" name="password2" required minlength="6" />
+      </div>
+
+      <button type="submit">Registrieren</button>
+    </form>
+
+    <p>Bereits registriert? <a href="/">Hier einloggen</a></p>
+  </div>
+
+  <script>
+    // Optional: Überprüfe, ob Passwörter übereinstimmen
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+      const p1 = form.password1.value;
+      const p2 = form.password2.value;
+      if (p1 !== p2) {
+        e.preventDefault();
+        alert('Die Passwörter stimmen nicht überein.');
+      }
+    });
+  </script>
+</body>
+</html>

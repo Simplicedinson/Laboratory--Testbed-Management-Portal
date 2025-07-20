@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home – Prüfstand‑Portal</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Willkommen, {{ user.username or user.email }}!</h1>
+      <a href="/logout">Abmelden</a>
+    </header>
+
+    <main>
+      <section>
+        <h2>Dashboard</h2>
+        <p>Du bist jetzt im Home-Bereich des Prüfstand-Portals.</p>
+        <ul>
+          <li><a href="/search">Prüfstände durchsuchen</a></li>
+          <li><a href="/test-requests">Meine Testanfragen</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <style>
+    /* Einfaches Inline-CSS, ersetze später durch separate Datei */
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f9f9f9; }
+    .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; }
+    header { display: flex; justify-content: space-between; align-items: center; }
+    a { text-decoration: none; color: #0066cc; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 8px 0; }
+  </style>
+</body>
+<footer class="site-footer">
+  <div class="footer-column footer-logo">
+    <img src="{{ url_for('static', path='images/logo1.png') }}" alt="ErTeMes Footer-Logo">
+  </div>
+  <div class="footer-column footer-contact">
+    <h3>ErteMes GmbH</h3>
+    <p>Goethestraße 20<br>
+       15738 Zeuthen</p>
+    <p>Telefon: +49 (0) 162 3310971<br>
+       E-Mail: <a href="mailto:ertemes@ertemes.de">ertemes@ertemes.de</a>
+    </p>
+  </div>
+  <div class="footer-column footer-links">
+    <ul>
+  <li>
+    <a href="https://www.ertemes.com/ueber-uns" target="_blank" rel="noopener">
+      Über Uns
+    </a>
+  </li>
+  <li>
+    <a href="https://www.ertemes.com/impressum#impressum" target="_blank" rel="noopener">
+      Impressum
+    </a>
+  </li>
+  <li>
+    <a href="https://www.ertemes.com/impressum#Datenschutzerklaerung" target="_blank" rel="noopener">
+      Datenschutzerklärung
+    </a>
+  </li>
+</ul>
+  </div>
+</footer>
+</html>
