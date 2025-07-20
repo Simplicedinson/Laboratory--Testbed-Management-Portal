@@ -1,4 +1,9 @@
 # Laboratory--Testbed-Management-Portal
+
+## Home Page  Overview
+![Smart Search demo Page](screenshot/home.png)
+
+## Admin demo Page
 ![Admin demo Page](screenshot/admin.png)
 
 A centralized online platform for managing, publishing, and booking laboratory test environments and measurement systems.
