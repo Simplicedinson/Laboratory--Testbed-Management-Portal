@@ -1,4 +1,5 @@
 # Laboratory--Testbed-Management-Portal
+![Admin demo Page][(screenshot/admin.png)
 A centralized online platform for managing, publishing, and booking laboratory test environments and measurement systems.
 
 A centralized online platform for managing, publishing, and booking laboratory test environments and measurement systems.
@@ -58,13 +59,6 @@ Main entities:
 - `MaintenanceLog`
 
 Each testbed is linked to providers, devices, supporting systems, and booking requests.
-
----
-
-## 📷 Screenshots
-
-> _(Optional – insert screenshots here using markdown image syntax)_  
-> `![Dashboard](screenshots/dashboard.png)`
 
 ---
 
